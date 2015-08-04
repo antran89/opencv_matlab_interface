@@ -1,0 +1,62 @@
+
+------------------------------------------------------------------------
+       Segmentation violation detected at Mon Aug  3 22:57:55 2015
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding  : Disabled
+  Current Visual  : 0x21 (class 4, depth 24)
+  Default Encoding: UTF-8
+  GNU C Library   : 2.19 stable
+  MATLAB Root     : /usr/local/MATLAB/R2012a
+  MATLAB Version  : 7.14.0.739 (R2012a)
+  Operating System: Linux 3.13.0-61-generic #100-Ubuntu SMP Wed Jul 29 11:21:34 UTC 2015 x86_64
+  Processor ID    : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+  Virtual Machine : Java 1.6.0_17-b04 with Sun Microsystems Inc. Java HotSpot(TM) 64-Bit Server VM mixed mode
+  Window System   : The X.Org Foundation (10903000), display :10.0
+
+Fault Count: 1
+
+
+Abnormal termination:
+Segmentation violation
+
+Register State (from fault):
+  RAX = 00007f0501010000  RBX = 00007f0564e69320
+  RCX = 0000000000000000  RDX = 00000000ffffffff
+  RSP = 00007f0564e69288  RBP = 00007f0564e69420
+  RSI = 00007f0564e69400  RDI = 00007f0564e69320
+
+   R8 = 0000000000000000   R9 = 00007f0559ff1300
+  R10 = 0000000000000000  R11 = 00007f0576ea1a30
+  R12 = 00007f0564e694f0  R13 = 00007f0564e69400
+  R14 = 00007f0564e6a150  R15 = 0000000000000001
+
+  RIP = 0000000000000000  EFL = 0000000000010206
+
+   CS = 0033   FS = 0000   GS = 0000
+
+Stack Trace (from fault):
+[  0] 0x00007f0579b4192e    /usr/local/MATLAB/R2012a/bin/glnxa64/libmwfl.so+00370990 _ZN2fl4diag15stacktrace_base7captureERKNS0_14thread_contextEm+000158
+[  1] 0x00007f0579b447d0    /usr/local/MATLAB/R2012a/bin/glnxa64/libmwfl.so+00382928
+[  2] 0x00007f0579b44b3b    /usr/local/MATLAB/R2012a/bin/glnxa64/libmwfl.so+00383803 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+000171
+[  3] 0x00007f0578a28203   /usr/local/MATLAB/R2012a/bin/glnxa64/libmwmcr.so+01253891 _ZN2fl4diag13terminate_logEPKcPK8ucontext+000067
+[  4] 0x00007f0578a250fd   /usr/local/MATLAB/R2012a/bin/glnxa64/libmwmcr.so+01241341
+[  5] 0x00007f0578a2679d   /usr/local/MATLAB/R2012a/bin/glnxa64/libmwmcr.so+01247133
+[  6] 0x00007f0578a26925   /usr/local/MATLAB/R2012a/bin/glnxa64/libmwmcr.so+01247525
+[  7] 0x00007f0578a26f01   /usr/local/MATLAB/R2012a/bin/glnxa64/libmwmcr.so+01249025
+[  8] 0x00007f0578a273f5   /usr/local/MATLAB/R2012a/bin/glnxa64/libmwmcr.so+01250293
+[  9] 0x00007f05770ef340              /lib/x86_64-linux-gnu/libpthread.so.0+00066368
+
+
+This error was detected while a MEX-file was running. If the MEX-file
+is not an official MathWorks function, please examine its source code
+for errors. Please consult the External Interfaces Guide for information
+on debugging MEX-files.
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.
